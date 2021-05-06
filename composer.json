@@ -1,0 +1,21 @@
+{
+    "name": "rodrigorioo/gamersclub-api",
+    "description": "Simple library to get all GamersClub data",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rodrigo Rio",
+            "email": "rodrigo.rio@outlook.com.ar"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4.0",
+        "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "GamersClubAPI": "src/"
+        }
+    }
+}
