@@ -1,7 +1,9 @@
 {
     "name": "rodrigorioo/gamersclub-api",
     "description": "Simple library to get all GamersClub data",
+    "version": "1.0",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Rodrigo Rio",
