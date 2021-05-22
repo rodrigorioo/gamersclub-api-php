@@ -88,8 +88,7 @@ Una vez logueados en Gamers Club con nuestra cuenta de Steam, en Chrome realizam
 | ------ | ------ |
 | GamersClubAPI\Exceptions\Curl\Curl |  |
 | GamersClubAPI\Exceptions\ParseHTML\ParseHTML |  |
-| GamersClubAPI\Exceptions\ParseHTML\InvalidHTMLResponse | Hereda de GamersClubAPI\Exceptions\ParseHTML\ParseHTML |
-| GamersClubAPI\Exceptions\ParseHTML\InvalidType | Hereda de GamersClubAPI\Exceptions\ParseHTML\ParseHTML |
+| GamersClubAPI\Exceptions\ParseHTML\InvalidHTMLResponse | Hereda de GamersClubAPI\Exceptions\ParseHTML\ParseHTML | |
 | GamersClubAPI\Exceptions\ParseHTML\ResponseHeaderEmpty | Hereda de GamersClubAPI\Exceptions\ParseHTML\ParseHTML |
 
 ## Tests

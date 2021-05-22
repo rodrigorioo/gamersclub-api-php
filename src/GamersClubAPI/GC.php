@@ -3,13 +3,17 @@
 namespace GamersClubAPI;
 
 use GamersClubAPI\Exceptions\ParseHTML\ParseHTML;
-use GamersClubAPI\Traits\Curl;
-use GamersClubAPI\Traits\HTMLParser;
 use GamersClubAPI\Exceptions\Curl\Curl as CurlException;
+
+use GamersClubAPI\Traits\Curl;
+
+use GamersClubAPI\HTMLParsers\Match as MatchHTMLParser;
+use GamersClubAPI\HTMLParsers\Team as TeamHTMLParser;
+use GamersClubAPI\HTMLParsers\TeamMatches as TeamMatchesHTMLParser;
 
 class GC {
 
-    use HTMLParser, Curl;
+    use Curl;
 
     protected $url;
     protected $sessionId;
@@ -28,7 +32,8 @@ class GC {
         }
 
         try {
-            $data = $this->parseHTML($responseHTML, 'match');
+            $data = (new MatchHTMLParser())
+                ->parseHTML($responseHTML);
         } catch(ParseHTML $e) {
             throw $e;
         }
@@ -47,7 +52,8 @@ class GC {
         }
 
         try {
-            $data = $this->parseHTML($responseHTML, 'team');
+            $data = (new TeamHTMLParser())
+                ->parseHTML($responseHTML);
         } catch(ParseHTML $e) {
             throw $e;
         }
@@ -66,7 +72,8 @@ class GC {
         }
 
         try {
-            $data = $this->parseHTML($responseHTML, 'team_matches');
+            $data = (new TeamMatchesHTMLParser())
+                ->parseHTML($responseHTML);
         } catch(ParseHTML $e) {
             throw $e;
         }

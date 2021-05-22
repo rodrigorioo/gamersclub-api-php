@@ -54,17 +54,17 @@ class Match {
     }
 
     /**
-     * @return mixed
+     * @return bool
      */
-    public function getLive()
+    public function isLive(): bool
     {
         return $this->live;
     }
 
     /**
-     * @param mixed $live
+     * @param bool $live
      */
-    public function setLive($live): void
+    public function setLive(bool $live): void
     {
         $this->live = $live;
     }
