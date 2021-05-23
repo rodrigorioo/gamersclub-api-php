@@ -9,7 +9,7 @@ Gamers Club al no proporcionar una API, la librería lo que hace es scrapear dir
 La librería se instala vía composer
 
 ```sh
-composer install rodrigorioo/gamersclub-api
+composer require rodrigorioo/gamersclub-api
 ```
 
 ## Uso
