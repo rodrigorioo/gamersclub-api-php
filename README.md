@@ -4,6 +4,10 @@ GamersClub API es una librería en PHP que permite obtener información de parti
 
 Gamers Club al no proporcionar una API, la librería lo que hace es scrapear directamente la web, parsear la información y devolverla en un formato que se pueda trabajar.
 
+#### ATENCIÓN: Actualmente GC tiene implementado CloudFare, con lo cual todas las peticiones vía cURL las rechaza y bloquea. 
+
+#### Para evitar el bloqueo tienen que usar la librería en NodeJS que utiliza Puppeteer: https://github.com/rodrigorioo/gamersclub-api 
+
 ## Instalación
 
 La librería se instala vía composer
